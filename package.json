@@ -6,12 +6,15 @@
   "license": "",
   "author": "",
   "scripts": {
-    "build": "parcel build index.html",
+    "build": "parcel build",
     "dev": "parcel index.html --open",
-    "start": "npm run build && npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "@parcel/packager-raw-url": "^2.9.3",
+    "@parcel/transformer-webmanifest": "^2.9.3",
+    "gh-pages": "^6.0.0",
+    "parcel": "^2.9.3"
   }
 }
