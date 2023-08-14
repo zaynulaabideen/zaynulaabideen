@@ -180,9 +180,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -193,6 +193,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -261,3 +262,16 @@ textarea {
   }
 }
 
+header {
+
+}
+nav.main {
+  background-color: lightgray;
+}
+nav.main > ul{
+  list-style: none;
+}
+nav.main > ul > li{
+  display: inline-block;
+  margin: 5px 0px 5px 10px;
+}
